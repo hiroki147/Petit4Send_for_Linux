@@ -40,7 +40,7 @@ Petit4Sendオリジナル: [Rei HOBARA / REI SOFTWARE](http://rei.to/petit4send.
 ファイルを新しく選んだ直後だけ、拡張子で種類を変えます。大文字と小文字は区別しません。
 
 - `.TXT` `.PRG` は `TXT:`
-- `.FONT` `.DAT` `.CMT` `.D88` `.BIN` は `DAT:`
+- `.FONT` `.DAT` `.CMT` `.D88` `.BIN` `.ROM` `.I80` `.I88` `.T88` `.N80` は `DAT:`
 - `.JPG` `.PNG` `.JPEG` は `GRP:`
 
 これ以外の拡張子では、いま選ばれている種類のままです。選んだあとで種類を手で変えても、次に別のファイルを選ぶまで上書きしません。

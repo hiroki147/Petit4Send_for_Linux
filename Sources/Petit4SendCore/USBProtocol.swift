@@ -10,7 +10,7 @@ public enum FileKind: String, CaseIterable {
     public static func inferred(pathExtension: String) -> FileKind? {
         switch USBProtocol.asciiUppercased(pathExtension) {
         case "TXT", "PRG": return .text
-        case "FONT", "DAT", "CMT", "D88", "BIN": return .data
+        case "FONT", "DAT", "CMT", "D88", "BIN", "ROM", "I80", "I88", "T88", "N80": return .data
         case "JPG", "PNG", "JPEG": return .graphics
         default: return nil
         }

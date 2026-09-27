@@ -59,7 +59,7 @@ final class ProtocolTests: XCTestCase {
     func testKindInferenceFromExtension() {
         XCTAssertEqual(FileKind.inferred(pathExtension: "txt"), .text)
         XCTAssertEqual(FileKind.inferred(pathExtension: "PRG"), .text)
-        for ext in ["font", "DAT", "cmt", "D88", "bin"] {
+        for ext in ["font", "DAT", "cmt", "D88", "bin", "rom", "I80", "i88", "T88", "n80"] {
             XCTAssertEqual(FileKind.inferred(pathExtension: ext), .data, ext)
         }
         for ext in ["jpg", "PNG", "jpeg"] {
